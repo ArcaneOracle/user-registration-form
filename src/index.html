@@ -4,45 +4,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link href="output.css" rel="stylesheet">
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    html {
+      background-image: url(img/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Apply the Montserrat font to elements on your website */
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
 </head>
 
-<body class="bg-gray-900 m-12">
-  <div class="bg-white text-center w-64 m-auto">
-    <label>
-      First Name
-      <input type="text" required>
-    </label>
+<body class="">
+  <div id="div1" class="flex items-center justify-center h-screen opacity-100">
+    <div class="flex flex-wrap m-auto w-2/6 px-6 py-4 rounded-xl space-y-4 drop-shadow-md backdrop-blur-md hover:backdrop-blur-sm duration-1000 ease-in-out">
+      <label class="w-full">
+  First Name
+        <input type="text" class="placeholder:outline-4 w-full border-black border-2 border-solid focus:outline-none px-4 py-2 rounded-md border-opacity-60 drop-shadow-md" required>
+      </label>
 
-    <label>
-      Last Name
-      <input type="text" required>
-    </label>
+      <label class="w-full">
+        Last Name
+        <input type="text" class="placeholder:outline-4 w-full border-black border-2 border-solid focus:outline-none px-4 py-2 rounded-md border-opacity-60 drop-shadow-md" required>
+      </label>
 
-    <label>
-      Phone
-      <input type="tel" required>
-    </label>
+      <label class="w-full">
+        Phone
+        <input type="tel" class="placeholder:outline-4 w-full border-black border-2 border-solid focus:outline-none px-4 py-2 rounded-md border-opacity-60 drop-shadow-md" required>
+      </label>
 
-    <label>
-      E-Mail
-      <input type="text" required>
-    </label>
+      <label class="w-full">
+        E-Mail
+        <input type="text" class="placeholder:outline-4 w-full border-black border-2 border-solid focus:outline-none px-4 py-2 rounded-md border-opacity-60 drop-shadow-md" required>
+      </label>
 
-    <input type="date" required>
+      <label class="w-full placeholder:none">
+        Date of Birth
+        <br>
+        <input type="date" class="pr-8 w-full border-black border-2 border-solid focus:outline-none px-4 py-2 rounded-md border-opacity-60 drop-shadow-md fa fa-calendar" autocomplete="off" required>
+      </label>
 
-    <label>
-      Username
-      <input type="text" required>
-    </label>
+      <label class="w-full">
+        Username
+        <input type="text" class="placeholder:outline-4 w-full border-black border-2 border-solid focus:outline-none px-4 py-2 rounded-md border-opacity-60 drop-shadow-md" required>
+      </label>
 
-    <label>
-      Password
-      <input type="text" required>
-    </label>
+      <label class="w-full">
+        Password
+        <input type="password" class="placeholder:outline-4 w-full border-black border-2 border-solid focus:outline-none px-4 py-2 rounded-md border-opacity-60 drop-shadow-md" required>
+      </label>
 
-    <input type="submit" value="">
+      <button type="submit" class="ml-auto bg-red-600 px-4 py-2 rounded-md ease-in-out duration-300 hover:scale-105 hover:bg-opacity-95">Register</button>
+    </div>
   </div>
 </body>
+
+
+<!--
+
+
+
+-->
+
 
 </html>
